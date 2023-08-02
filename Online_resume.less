@@ -33,73 +33,105 @@
         }
     }
 
-    #Personal_Introduction {
-        width: 100%;
-        height: 100vh;
-        padding-top: 5rem;
-        background-color: white;
-        
 
-        .Personal_Introduction_text {
-            font-size: 3rem;
-            padding-left: 4rem;
-            font-weight: bold;
-        }
-    }
+}
 
-    #Work_Experience {
-        width: 100%;
-        height: 100vh;
-        padding-top: 5rem;
-        background-color: #C4C4C4;
-        
+.main div~div {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    padding-top: 5rem;
+        //这种写法不可以
+        // :nth-child(2n){
+        //     background-color: white;
+        // }
 
-        .comment_part_text {
-            font-size: 3rem;
-            padding-left: 4rem;
-            font-weight: bold;
-        }
-    }
+        // :nth-child(2n+3){
+        //     background-color: #C4C4C4;
+        // }
 
-    #Educational_Experience {
-        width: 100%;
-        height: 100vh;
-        padding-top: 5rem;
-        background-color: white;
-        
-
-        .comment_part_text {
-            font-size: 3rem;
-            padding-left: 4rem;
-            font-weight: bold;
-        }
-    }
-
-    #Language_Skills {
-        width: 100%;
-        height: 100vh;
-        padding-top: 5rem;
-        background-color: #C4C4C4;
-        
-
-        .comment_part_text {
-            font-size: 3rem;
-            padding-left: 4rem;
-            font-weight: bold;
-        }
-    }
-
-    #Awards_and_Certificates {
-        width: 100%;
-        height: 100vh;
-        padding-top: 5rem;
-        background-color: white;
-        
-
-        .comment_part_text {
-            font-size: 3rem;
-            padding-left: 4rem;
-            font-weight: bold;
-        }
+    :first-child {
+        font-size: 3rem;
+        padding-left: 4rem;
+        font-weight: bold;
     }
 }
+//白色是默认，可以不写
+// .main :nth-child(2n) {
+//     background-color: white;
+// }
+
+.main :nth-child(2n+3) {
+    background-color: #C4C4C4;
+}
+
+//未优化前的代码
+// #Personal_Introduction {
+//     width: 100%;
+//     height: 100vh;
+//     padding-top: 5rem;
+//     background-color: white;
+
+
+//     .Personal_Introduction_text {
+//         font-size: 3rem;
+//         padding-left: 4rem;
+//         font-weight: bold;
+//     }
+// }
+
+// #Work_Experience {
+//     width: 100%;
+//     height: 100vh;
+//     padding-top: 5rem;
+//     background-color: #C4C4C4;
+
+
+//     .comment_part_text {
+//         font-size: 3rem;
+//         padding-left: 4rem;
+//         font-weight: bold;
+//     }
+// }
+
+// #Educational_Experience {
+//     width: 100%;
+//     height: 100vh;
+//     padding-top: 5rem;
+//     background-color: white;
+
+
+//     .comment_part_text {
+//         font-size: 3rem;
+//         padding-left: 4rem;
+//         font-weight: bold;
+//     }
+// }
+
+// #Language_Skills {
+//     width: 100%;
+//     height: 100vh;
+//     padding-top: 5rem;
+//     background-color: #C4C4C4;
+
+
+//     .comment_part_text {
+//         font-size: 3rem;
+//         padding-left: 4rem;
+//         font-weight: bold;
+//     }
+// }
+
+// #Awards_and_Certificates {
+//     width: 100%;
+//     height: 100vh;
+//     padding-top: 5rem;
+//     background-color: white;
+
+
+//     .comment_part_text {
+//         font-size: 3rem;
+//         padding-left: 4rem;
+//         font-weight: bold;
+//     }
+// }
